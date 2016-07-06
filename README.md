@@ -15,10 +15,12 @@ Install SBT via Ubuntu package manager.
 	sudo apt-get update
 	sudo apt-get install sbt
 
-#	* Visit http://liftweb.net/download and download the most recent Lift 2.6 ZIP file.
-#	* Unzip the file.
-#	* Start Terminal or your favourite shell tool.
-#	* Navigate into the unzipped folder and into the scala_211 subfolder and then into the lift_basic folder.
+<!---
+* Visit http://liftweb.net/download and download the most recent Lift 2.6 ZIP file.
+* Unzip the file.
+* Start Terminal or your favourite shell tool.
+* Navigate into the unzipped folder and into the scala_211 subfolder and then into the lift_basic folder.
+-->
 
 Run ./sbt. Required libraries will be downloaded automatically.
 
