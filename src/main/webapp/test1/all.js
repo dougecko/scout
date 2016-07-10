@@ -1,11 +1,12 @@
 var constructAddSlideButton = function(name,desc,faIcon,increment){
     if (shouldModifyConversationFunction()){
+        var classy = jQuery.validator.format("toolbar fa {0} btn-icon nmt",faIcon);
         return $("<button/>",{
             id: name,
-            class:"toolbar fa " + faIcon + " btn-icon nmt",
+            class:classy,
             name: name,
             type: "button"
-        }).append($("<div class='icon-txt'/>" + desc + "</div>")).on("click",bounceAnd(function(increment2){
+        }).append($("<div/>",{text:desc, "class":"icon-txt"})).on("click",bounceAnd(function(increment2){
             var currentJid = currentConversation.jid;
             var currentSlideIndex = currentConversation.slides.filter(function(slide){return slide.id == currentSlide;})[0].index;
             var newIndex = currentSlideIndex + increment2;
