@@ -10,10 +10,16 @@ Ubuntu
 
 Install SBT via Ubuntu package manager.
 
-	echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-	sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
-	sudo apt-get update
-	sudo apt-get install sbt
+	> echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
+	> sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823
+	> sudo apt-get update
+	> sudo apt-get install sbt
+
+Run SBT from the repo clone directory.
+
+	> sbt
+
+Required libraries will be downloaded automatically.
 
 <!---
 * Visit http://liftweb.net/download and download the most recent Lift 2.6 ZIP file.
@@ -21,8 +27,6 @@ Install SBT via Ubuntu package manager.
 * Start Terminal or your favourite shell tool.
 * Navigate into the unzipped folder and into the scala_211 subfolder and then into the lift_basic folder.
 -->
-
-Run ./sbt. Required libraries will be downloaded automatically.
 
 At the SBT prompt, type:
 
