@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<script type="text/javascript">
+    var stuff = function (a) {
+        return function (b) {
+            alert(b);
+        }(a);
+    };
+
+    var foo = function () {
+        return stuff("Stuff");
+    };
+</script>
+<html>
+<head>
+    <title>Test</title>
+</head>
+<body>
+<button id="bob" value="Bob" class="btn btn-inverse" onclick="foo();">Bob</button>
+</body>
+</html>
