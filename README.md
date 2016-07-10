@@ -38,6 +38,10 @@ IntelliJ Idea
 Start SBT, and at the SBT prompt, create the IDEA project files by typing:
 
 	> gen-idea
+	
+OR
+
+Use IDEA | Open Project on the build.sbt file to allow IDEA to import SBT into an IDEA project.
 
 To see live changes as you edit and save your work, run SBT in a separate Terminal window. That is, start sbt from a Terminal window outside of IntelliJ and enter the following:
 
